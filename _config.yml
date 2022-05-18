@@ -43,11 +43,8 @@ about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
   개발자 김석현입니다 [🍟](https://sh0116.github.io/)
 
-  You can even add paragraphs by using empty lines like this and add anything else [markdown](https://www.markdownguide.org/getting-started#what-is-markdown) supports such as
-    - Lists
-    - Tables
-    - <a href="google.com">Links</a>
-    - Images ![alt text](/images/landscape-trees.jpg "Trees")
+  Good at : Computer Vision, Data Dev, IoT(Raspberry Pi..) 
+  want to learn : Data engineering, EDA 
 
 content:
   - title: Projects # Title for the section
