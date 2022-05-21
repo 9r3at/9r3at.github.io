@@ -55,19 +55,30 @@ content:
         border: weak  # Value of `weak` will display a weak border below this item. # Any 
                       # other value (or no value) means no border will be displayed
         title: 독거노인을 위한 돌봄로봇 "백구"
-        link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-        link_text: Link Text
+        link: https://github.com/sh0116/SWM_109Team
+        link_text: Github REPO
         additional_links:
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          - title:  https://github.com/sh0116/SWM_109Team
             icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+            url: Link to project
         quote: >
-          Short overview of the project (optional)
+          SW Maestro 11기 109팀이 진행하는 '독거노인을 위한 돌봄서비스 반려로봇' 프로젝트는 혼자 거주하는 어르신을 대상으로 강아지 외형의 로봇을 보급하여 생활패턴을 케어하고 위급상황을 감지하는, 정신적/신체적 케어서비스를 제공합니다.
         description: | # this will include new lines to allow paragraphs  <mark>like this</mark>.
-          Description about the work on/with the project
+          [기여한 점과 사용한 지식] <br>
+            - 팀장 <br>
+                 - 프로젝트 형상 관리와 프로젝트 재무 관리
+                 - 특허 및 SW라이센스 등록 및 관리
+            - ML/DL Part (NLP,CV)
+                 - 다양한 클라우드 기술 사용 (AWS TTS, GCP STT, GCP DialogFlow 등)
+                 - VAD (Voice Activity Detection) , Wake word Detection 기술 응용 
+                 - 낙상 알고리즘 설계 및 구현 (특허 출원)
+            - BackEnd Part
+                 -  Flask 를 이용한 web 대시보드 제작
+                 -  Ajax 를 이용한 비동기식 대시보드 제작
+            - IoT 담당 
+                 -  Raspberry pI (본체) 내부 Flow 설계 및 구현
+                 -  Raspberry pI (센서) 함수 및 Pipe 설계 및 구현
+                 -  3D Modeling & Printing
           
       - layout: left
         border: weak  # Value of `weak` will display a weak border below this item. # Any 
