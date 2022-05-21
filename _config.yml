@@ -64,7 +64,7 @@ content:
         quote: >
           SW Maestro 11기 109팀이 진행하는 '독거노인을 위한 돌봄서비스 반려로봇' 프로젝트는 혼자 거주하는 어르신을 대상으로 강아지 외형의 로봇을 보급하여 생활패턴을 케어하고 위급상황을 감지하는, 정신적/신체적 케어서비스를 제공합니다.
         description: | # this will include new lines to allow paragraphs  <mark>like this</mark>.
-          [기여한 점과 사용한 지식]
+          [기여한 점과 성과]
             - 팀장 
                  - 프로젝트 형상 관리와 프로젝트 재무 관리
                  - 특허 및 SW라이센스 등록 및 관리
@@ -79,7 +79,6 @@ content:
                  -  Raspberry pI (본체) 내부 Flow 설계 및 구현
                  -  Raspberry pI (센서) 함수 및 Pipe 설계 및 구현
                  -  3D Modeling & Printing
-          [결과 및 성과]
             - 특허 및 상표권 출원
                  - 출원번호 : 40-2020-0199523
             - MOU 체결 (with 꼬마빌리지)
@@ -101,7 +100,7 @@ content:
         quote: >
           국방부와 과학기술정보통신부에서 주관하는 군장병 SW해커톤에서 진행한 군장병을 위한 잔반 처리 시스템이다. APP과 IoT시스템으로 이루어진 프로젝트이다. 군장병의 식생활 개선과 잔반량 감소가 목표인 시스템이다.
         description: | # this will include new lines to allow paragraphs  <mark>like this</mark>.
-          [기여한 점과 사용한 지식]
+          [기여한 점과 성과]
             - 팀장
                  - 프로젝트 형상 관리
             - ML/DL Part (CV)
@@ -110,9 +109,8 @@ content:
             - IoT 담당 
                  -  Raspberry pI (본체) 내부 Flow 설계 및 구현
                  -  3D Modeling & Printing
-          [결과 및 성과]
             - 입상 
-                 -  육군참모총장상(★★★★)
+                 -  육군참모총장상(★★★★) 및 포상금(50만원)
             - 기부
                  -  입상 포상금 50만원과 개인 기부금 50만원 총 100만원을 
                     국가 유공자에게 기부함.
