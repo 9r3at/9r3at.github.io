@@ -14,7 +14,7 @@ website: https://sh0116.github.io/
 # website_title: Web (Website title override)
 
 # Dark Mode (true/false/never)
-darkmode: false
+darkmode: true
 
 # Social links
 github_username:  sh0116
