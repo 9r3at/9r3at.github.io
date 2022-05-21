@@ -97,7 +97,7 @@ content:
         link: https://www.swmaestro.org/sw/main/main.do
         description: | # this will include new lines to allow paragraphs
           SW마에스트로 과정은  과학기술정보통신부 주관 창의도전형 SW인재 육성으로 SW산업의 미래를 선도하는 정부지원 사업입니다.
-    content:
+          
       - layout: left
         title: ROKA CERT(Computer Emergency Response Team)
         sub_title: Information Security Management Team
@@ -111,7 +111,6 @@ content:
         sub_title: Computer science
         caption: 2016.09~2023.06
         
-    content:
       - layout: left
         title: KONKUK UNIVERSITY
         sub_title: exchange student
@@ -121,7 +120,7 @@ content:
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
-      감자튀김 좋아합니다.. [🍟](https://sh0116.github.io/)
+      **감자튀김 좋아합니다..** [🍟](https://sh0116.github.io/)
       
 # Footer
 footer_show_references: true
