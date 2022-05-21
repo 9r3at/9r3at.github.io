@@ -99,7 +99,7 @@ content:
             icon: fab fa-github
             url: https://github.com/sh0116/APP_IOT_MealScan_FOODFIGHTERS
         quote: >
-          Short overview of the project (optional)
+          국방부와 과학기술정보통신부에서 주관하는 군장병 SW해커톤에서 진행한 군장병을 위한 잔반 처리 시스템이다. APP과 IoT시스템으로 이루어진 프로젝트이다. 군장병의 식생활 개선과 잔반량 감소가 목표인 시스템이다.
         description: | # this will include new lines to allow paragraphs  <mark>like this</mark>.
           [기여한 점과 사용한 지식]
             - 팀장
@@ -110,7 +110,7 @@ content:
             - IoT 담당 
                  -  Raspberry pI (본체) 내부 Flow 설계 및 구현
                  -  3D Modeling & Printing
-            [결과 및 성과]
+          [결과 및 성과]
             - 입상 
                  -  육군참모총장상(★★★★)
             - 기부
