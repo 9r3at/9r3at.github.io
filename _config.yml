@@ -118,12 +118,6 @@ content:
         border: weak  # Value of `weak` will display a weak border below this item. # Any 
                       # other value (or no value) means no border will be displayed
         title: Small Project
-        link: https://github.com/sh0116/APP_IOT_MealScan_FOODFIGHTERS
-        link_text: Github REPO
-        additional_links:
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: https://github.com/sh0116/APP_IOT_MealScan_FOODFIGHTERS
         description: | # this will include new lines to allow paragraphs  <mark>like this</mark>.
           - 얼굴 인식 기반 출석 체크 시스템
           - 얼굴 인식 기반 트래킹 기술
