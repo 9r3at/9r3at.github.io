@@ -14,7 +14,7 @@ website: https://sh0116.github.io/
 # website_title: Web (Website title override)
 
 # Dark Mode (true/false/never)
-darkmode: true
+darkmode: false
 
 # Social links
 github_username:  sh0116
@@ -42,7 +42,7 @@ linkedin_username: seokhyeon116
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
   개발자 김석현입니다 [🍟](https://sh0116.github.io/)
-
+  
   Good at : Computer Vision, Data Dev, IoT(Raspberry Pi..) 
   
   want to learn : Data engineering, EDA 
@@ -114,6 +114,22 @@ content:
             - 기부
                  -  입상 포상금 50만원과 개인 기부금 50만원 총 100만원을 
                     국가 유공자에게 기부함.
+      - layout: right
+        border: weak  # Value of `weak` will display a weak border below this item. # Any 
+                      # other value (or no value) means no border will be displayed
+        title: Small Project
+        link: https://github.com/sh0116/APP_IOT_MealScan_FOODFIGHTERS
+        link_text: Github REPO
+        additional_links:
+          - title:  Github page for project (eg. sproogen/modern-resume-theme)
+            icon: fab fa-github
+            url: https://github.com/sh0116/APP_IOT_MealScan_FOODFIGHTERS
+        description: | # this will include new lines to allow paragraphs  <mark>like this</mark>.
+          - 얼굴 인식 기반 출석 체크 시스템
+          - 얼굴 인식 기반 출석 체크 시스템
+          - 얼굴 인식 기반 출석 체크 시스템
+          - 얼굴 인식 기반 출석 체크 시스템
+          - 얼굴 인식 기반 출석 체크 시스템
 
   - title: Experience
     layout: list
