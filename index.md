@@ -45,34 +45,19 @@ title: 김석현 (Seokhyeon Kim)
 
 ---
 
-## 학위 논문
+## 학력
 
-**Design and Implementation of a Blockchain-based Multi-UAV Mission Management System**
-Beijing Institute of Technology — 학사 졸업논문 · 2023.02 – 2023.06
-
-- HLF(Hyperledger Fabric) 기반 폐쇄형 블록체인 네트워크 설계, 체인코드·합의 알고리즘 개발
-- Go 기반 트랜잭션 처리 REST 서버 개발
-- 블록체인 네트워크 트랜잭션 처리 및 실시간 관제 대시보드 설계·개발
-- Django 기반 UAV 관리 시스템 및 FANET 비동기 task 처리 엔드포인트 개발
+**Beijing Institute of Technology** — 학사 (2023)
+졸업논문: *Design and Implementation of a Blockchain-based Multi-UAV Mission Management System* (2023.02 – 2023.06)
+- Hyperledger Fabric 기반 폐쇄형 블록체인 네트워크 및 Go 기반 REST 서버 개발
+- Django 기반 UAV 관리 시스템 및 실시간 관제 대시보드 개발
 
 ---
 
-## 주요 프로젝트 / 수상
+## 기타 수상 / 활동
 
-### 나만의 제주어 이름 생성기 "제주일름" — 9oormthon(구름톤) 1기
-**2022.08.22 – 2022.08.26**
-- 사라져가는 제주어 활성화를 목표로, 이름의 뜻을 담아 제주어 이름을 생성해주는 웹 콘텐츠 제작
-- Flask 백엔드 개발, PyTorch 인공지능 모델 서빙
-- 수상: 제1회 구름톤 — 카카오 대표상 대상
-
-### 독거노인을 위한 반려로봇 "백구" — 소프트웨어 마에스트로
-**2020.06 – 2020.11**
-- 혼자 거주하는 어르신의 생활 패턴을 케어하고 위급 상황을 감지하는 반려로봇 서비스
-- Flask 백엔드, AWS/IoT 인프라 구축, NLP 기반 말벗 서비스 설계, 라즈베리파이 기반 로봇 본체 및 3D 모델링
-- 특허: 낙상 감지 알고리즘을 이용한 독거노인 케어 로봇 (10-2020-0152831) 등 2건 출원
-- SW 저작권: 보호자용 앱, 스마트 반려로봇, 관제 웹페이지 등 3건 등록
-- 수상: ICT이노베이션 제주 인공지능&블록체인 아이디어 공모전 대상 입상, 왕중왕전(전국 인공지능 아이디어 공모전) 출전
-- 키즈카페 (주)꼬마빌리지와 MOU 체결
+- **나만의 제주어 이름 생성기 "제주일름"** (9oormthon 구름톤 1기, 2022.08) — 제1회 구름톤 카카오 대표상 대상, ICT이노베이션 제주 공모전 및 왕중왕전 전국대회 입상
+- **독거노인 돌봄로봇 "백구"** (소프트웨어 마에스트로, 2020.06–2020.11) — 특허 2건, SW저작권 3건 등록, 공모전 입상
 
 ---
 
@@ -85,4 +70,4 @@ Beijing Institute of Technology — 학사 졸업논문 · 2023.02 – 2023.06
 
 ---
 
-[LinkedIn](https://www.linkedin.com/in/seokhyeon-kim/) · [GitHub](https://github.com/9r3at)
+[LinkedIn](https://www.linkedin.com/in/seokhyeon-kim/) · [GitHub](https://github.com/sh0116)
