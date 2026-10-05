@@ -3,3 +3,6 @@ description: "AI Engineer — Knowledge Graph & AIOps"
 theme: minima
 show_excerpts: false
 markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+google_site_verification: "OeoKlUWeQypkg3Lrb0HowXXwxWIKYVQ4NcPZWz4_w0k"
