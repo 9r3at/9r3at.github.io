@@ -70,14 +70,17 @@ content:
         description: | # this will include new lines to allow paragraphs
           **Knowledge Graph DB with Ontology**
 
-          증권사 상품, PB 가이드, WM 업무 가이드를 대상으로 온톨로지·지식그래프 설계, 정형·비정형 데이터 KG 생성 파이프라인 기획·개발. LLM 기반 비정형 데이터 정보 추출, 문서 유형별 파이프라인 분리 구현. 벡터 검색 기반 RAG의 한계(연관관계·구조적 질의 미대응)를 KG 기반 RAG로 확장해 해결. 사내 업무 프로세스(WM, PB 업무)를 온톨로지로 구현해 Agent가 업무 효율화를 수행할 수 있는 기반 마련.
+          RDB와 비정형 금융문서(공시·투자설명서·리서치)를 통합 Knowledge Graph로 변환하는 Ingestion 파이프라인을 설계·구현. PDF 표/그림 파싱 정확도를 높이기 위해 PDF 글리프 좌표 기반 표 복원 로직을 개발했고, LLM이 생성한 온톨로지(TBox)를 법령·공식분류체계 기준으로 검증하는 Self-Reflective 평가 루프를 구축해 수작업 검수 없이도 품질을 보장. 오픈소스 Temporal Graph 엔진을 자체 구현으로 대체해 시간축 기반 사실 모순 탐지(Bi-temporal invalidation)를 지원.
 
-          - Hallucination 문제: 도메인 이해가 없는 LLM을 비정형 데이터에 적용하며 관계 오류·신뢰도 저하 발생 → VL 모델 기반 임베딩, Reranker 적용, 금융 도메인 특화 LLM·프롬프트 설계로 개선 방향 제시
-          - 검색 속도 문제: 그래프 탐색 특성상 벡터 검색·RDB 쿼리 대비 응답 속도 저하 → FAQ·문서·그래프 기반 예상 질의-응답 쌍을 사전 생성해 별도 그래프로 저장하는 **Semantic Caching** 전략 설계
+          - RDB·비정형 문서(DART 공시, 간이투자설명서, 리서치, 하우스뷰)를 입력으로 받아 Knowledge Graph(Neptune)/Vector Index(OpenSearch)를 구축하는 Ingestion 5단계 파이프라인(parsing/ontology/ontology_axioms/materialization/indexing) 개발
+          - PDF 테이블 파싱 정확도 문제를 OCR 결과와 PDF 원본 글리프·괘선 좌표를 교차검증하는 알고리즘(band detection + DP alignment + VLM patch)으로 해결
+          - 법령·공식분류체계(자본시장법, KRX, DART)를 LLM 비의존 ETL로 추출해 온톨로지 설계 LLM의 가드레일(폐쇄분류체계·스코프상한)로 제공, SHACL 검증 및 버전 간 breaking-change 자동 분류 구현
+          - LLM 셀프평가 기반 재추출 루프를 도입해 온톨로지 품질을 자동 개선(임계값 미달 시 피드백 주입 후 재생성, 초과 시 Human escalation)
 
           **AIOps 플랫폼 & LLM 최적화 서빙**
 
-          EKS/ECR 기반 Kubernetes 서버 배포, CloudFront 기반 프론트엔드 정적 배포, GitHub Actions 배포 자동화. vLLM, TensorRT-LLM 등 서빙 프레임워크 사내 도입, 폐쇄 온프레미스 환경 LLM 서빙 및 엔드포인트 제공. 사내 데이터 분석 환경 및 전사 LLM 서빙 인프라 구축으로 안정적인 AI 서비스 운영 지원.
+          - Kubernetes기반의 플랫폼, 분석계 저장소 CDP(Hadoop)과 연계된 데이터 분석 환경과 LLM을 제공하는 플랫폼
+          - 무중단(region 간 failover·링크 단절 내성·GPU 장애 자동 격리)과 LLM 성능(prefix cache 라우팅·P/D 분리·KV 관리)을 동시에 고려한 대고객 LLM 서빙 플랫폼을 설계하고, 인증·테넌트 quota·모델 alias·감사·데이터 region 정책을 담당하는 LLM Gateway를 LiteLLM/Envoy/AIBrix 기반으로 구현
 
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
@@ -87,7 +90,8 @@ content:
         sub_title: Software Engineer - Bachelor of Engineering
         caption: 2016.09 - 2023.06
         quote: >
-          졸업논문 — Design and Implementation of a Blockchain-based Multi-UAV Mission Management System
+          졸업논문
+          < Design and Implementation of a Blockchain-based Multi-UAV Mission Management System >
         description: | # this will include new lines to allow paragraphs
           - Hyperledger Fabric 기반 폐쇄형 블록체인 네트워크 및 Go 기반 REST 서버 개발
           - Django 기반 UAV 관리 시스템 및 실시간 관제 대시보드 개발
