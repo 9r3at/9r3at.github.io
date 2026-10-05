@@ -63,7 +63,7 @@ content:
     content:
       - layout: left
         title: 미래에셋증권
-        sub_title: AI Engineer, AI솔루션본부 Data플랫폼팀
+        sub_title: AI Engineer본부 Data플랫폼팀
         caption: 2023.07 - 현재
         quote: >
           금융 도메인 지식그래프와 LLM 서빙 인프라를 기획부터 운영까지 직접 설계·구축
@@ -84,9 +84,10 @@ content:
     content:
       - layout: left
         title: Beijing Institute of Technology
-        sub_title: 학사, 졸업논문 — Design and Implementation of a Blockchain-based Multi-UAV Mission Management System
-        caption: 2023.02 - 2023.06
+        sub_title: software engineer - Bachelor of Engineering
+        caption: 2016.09 - 2023.06
         description: | # this will include new lines to allow paragraphs
+          - **졸업논문 — Design and Implementation of a Blockchain-based Multi-UAV Mission Management System**
           - Hyperledger Fabric 기반 폐쇄형 블록체인 네트워크 및 Go 기반 REST 서버 개발
           - Django 기반 UAV 관리 시스템 및 실시간 관제 대시보드 개발
 
