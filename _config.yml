@@ -79,8 +79,6 @@ content:
 
           EKS/ECR 기반 Kubernetes 서버 배포, CloudFront 기반 프론트엔드 정적 배포, GitHub Actions 배포 자동화. vLLM, TensorRT-LLM 등 서빙 프레임워크 사내 도입, 폐쇄 온프레미스 환경 LLM 서빙 및 엔드포인트 제공. 사내 데이터 분석 환경 및 전사 LLM 서빙 인프라 구축으로 안정적인 AI 서비스 운영 지원.
 
-          수상: 정보통신산업진흥원 원장상
-
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
     content:
@@ -93,20 +91,12 @@ content:
           - Django 기반 UAV 관리 시스템 및 실시간 관제 대시보드 개발
 
   - title: 기타 수상 / 활동 # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: left
-        title: 나만의 제주어 이름 생성기 "제주일름"
-        sub_title: 9oormthon(구름톤) 1기
-        caption: 2022.08
-        description: | # this will include new lines to allow paragraphs
-          제1회 구름톤 카카오 대표상 대상, ICT이노베이션 제주 공모전 및 왕중왕전 전국대회 입상
-      - layout: left
-        title: 독거노인을 위한 반려로봇 "백구"
-        sub_title: 소프트웨어 마에스트로
-        caption: 2020.06 - 2020.11
-        description: | # this will include new lines to allow paragraphs
-          특허 2건 출원, SW저작권 3건 등록, 공모전 입상
+    layout: text # Type of content section (list/text)
+    content: | # this will include new lines to allow paragraphs
+      - **오픈 데이터 포럼 해커톤** · 행정안전부 (2022) — 장관상 입상
+      - **전국 인공지능 아이디어 공모전** · ICT이노베이션스퀘어 (2022) — 정보통신산업진흥원 원장상 입상
+      - **9oormthon 구름톤** · Kakao x 구름 (2022) — 구름톤 대상 입상, 카카오 대표이사상
+      - **OSAM 해커톤** · 국방부 x 과기부 SW해커톤 (2021) — 육군참모총장상
 
   - title: Skills
     layout: text
@@ -138,8 +128,6 @@ content_en:
 
           Deployed Kubernetes-based servers on EKS/ECR, served static frontend assets via CloudFront, and automated deployment with GitHub Actions. Introduced serving frameworks such as vLLM and TensorRT-LLM internally, and provided LLM serving and endpoints in a closed on-premises environment. Supported stable AI service operations by building an internal data analysis environment and company-wide LLM serving infrastructure.
 
-          Award: NIPA (National IT Industry Promotion Agency) Director's Award
-
   - title: Education
     layout: list
     content:
@@ -152,20 +140,12 @@ content_en:
           - Built a Django-based UAV management system and a real-time monitoring dashboard
 
   - title: Other Awards & Activities
-    layout: list
-    content:
-      - layout: left
-        title: "\"Jejuileum\": A Jeju-dialect Name Generator"
-        sub_title: 9oormthon (Guroomthon), Season 1
-        caption: Aug 2022
-        description: | # this will include new lines to allow paragraphs
-          Grand Prize (Kakao's top award) at the 1st Guroomthon; also won at the ICT Innovation Jeju competition and advanced to the national finals
-      - layout: left
-        title: "\"Baekgu\": A Companion Robot for Elderly Living Alone"
-        sub_title: Software Maestro
-        caption: Jun 2020 - Nov 2020
-        description: | # this will include new lines to allow paragraphs
-          Filed 2 patents, registered 3 software copyrights, competition award winner
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      - **Open Data Forum Hackathon** · Ministry of the Interior and Safety (2022) — Minister's Award
+      - **National AI Idea Competition** · ICT Innovation Square (2022) — NIPA Director's Award
+      - **9oormthon (Guroomthon)** · Kakao x Guroom (2022) — Grand Prize, Kakao CEO Award
+      - **OSAM Hackathon** · Ministry of National Defense x Ministry of Science and ICT SW Hackathon (2021) — Army Chief of Staff Award
 
   - title: Skills
     layout: text
