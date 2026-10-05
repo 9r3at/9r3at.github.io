@@ -103,10 +103,8 @@ content:
   - title: Skills
     layout: text
     content: | # this will include new lines to allow paragraphs
-      - **Backend**: Flask, Django, Go
       - **AI**: LLM Inference, OCR Tech, Knowledge Graph, Ontology
-      - **Infra/DevOps**: AWS, Kubernetes, AirGap-Onpremise
-      - **Blockchain**: Hyperledger Fabric
+      - **Infra/DevOps**: AWS, Kubernetes, AirGap-OnPremise
 
 content_en:
   - title: Experience
@@ -154,10 +152,8 @@ content_en:
   - title: Skills
     layout: text
     content: | # this will include new lines to allow paragraphs
-      - **Backend**: Flask, Django, Go
       - **AI**: LLM Inference, OCR Tech, Knowledge Graph, Ontology
-      - **Infra/DevOps**: AWS, Kubernetes, AirGap-Onpremise
-      - **Blockchain**: Hyperledger Fabric
+      - **Infra/DevOps**: AWS, Kubernetes, AirGap-OnPremise
 
 # Footer
 footer_show_references: false
