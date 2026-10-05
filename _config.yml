@@ -7,6 +7,7 @@ version: 2
 
 # Personal info
 name: 김석현 (Seokhyeon Kim)
+name_en: Seokhyeon Kim
 title: AI Engineer — Knowledge Graph & AIOps
 website: https://9r3at.github.io
 
@@ -43,6 +44,17 @@ about_content: | # this will include new lines to allow paragraphs
   이 과정에서 정형·비정형 데이터의 파싱과 청킹 전략 수립, 지식 그래프 데이터 추출·적재, 그래프 기반 검색까지 전 과정을 직접 기획·개발하며, 단순 검색을 넘어 Agent가 업무 지식을 실제 업무 프로세스에 활용할 수 있는 기반을 마련했습니다.
 
   앞으로는 도메인 지식을 이해하고 실행할 수 있는 AI 서비스 파이프라인을 설계·구축하는 AI Engineer로 성장하고자 합니다.
+
+about_content_en: | # this will include new lines to allow paragraphs
+  I entered university at 16. Fascinated by computers from an early age, I chose to take an equivalency exam instead of attending middle and high school so I could learn faster and more independently, then prepared directly for university entrance and was admitted to Beijing Institute of Technology.
+
+  Since then, I've stayed focused on solving problems through software. I've worked as a developer in numerous competitions and hackathons, and built experience defining and solving problems with technology through programs such as Software Maestro, KDT (K-Digital Training), and backend internships.
+
+  I currently work at Mirae Asset Securities' AI Solutions Division, developing an AIOps platform and AI service pipelines, and more recently leading the construction of a Knowledge Graph DB tailored to the securities domain. I designed and implemented an ontology and knowledge graph covering securities products, PB (private banking) guides, and WM (wealth management) work guides, building a search architecture that can handle relationship-centric and structural queries that traditional vector-search-based RAG struggles with.
+
+  Throughout this process, I personally planned and built the entire pipeline myself — from parsing and chunking strategies for structured and unstructured data, to extracting and loading knowledge graph data, to graph-based search — laying the groundwork for agents to apply institutional knowledge to real business processes, beyond simple retrieval.
+
+  Going forward, I want to grow as an AI Engineer who designs and builds AI service pipelines that can understand and act on domain knowledge.
 
 content:
   - title: Experience # Title for the section
@@ -101,6 +113,65 @@ content:
       - **Backend**: Flask, Django, Go
       - **AI/LLM**: PyTorch, vLLM, TensorRT-LLM, Knowledge Graph/Ontology 설계, RAG
       - **Infra/DevOps**: AWS(EKS, ECR, CloudFront), Kubernetes, GitHub Actions
+      - **Blockchain**: Hyperledger Fabric
+
+content_en:
+  - title: Experience
+    layout: list
+    content:
+      - layout: left
+        title: Mirae Asset Securities
+        sub_title: AI Engineer, Data Platform Team, AI Solutions Division
+        caption: Jul 2023 - Present
+        quote: >
+          Designing and building financial-domain knowledge graphs and LLM serving infrastructure end to end, from planning to operations
+        description: | # this will include new lines to allow paragraphs
+          **Knowledge Graph DB with Ontology**
+
+          Designed an ontology and knowledge graph for securities products, PB guides, and WM work guides, and planned and built a KG generation pipeline covering structured and unstructured data. Implemented LLM-based information extraction from unstructured documents, with separate pipelines per document type. Extended beyond the limits of vector-search-based RAG, which struggles with relational and structural queries, by building a KG-based RAG. Modeled internal work processes (WM, PB) as an ontology, laying the foundation for agents to drive real workflow efficiency.
+
+          - Hallucination: Applying an LLM without domain understanding to unstructured data caused relational errors and reduced reliability. Proposed improvements including VL-model-based embeddings, a reranker, and a finance-domain-tuned LLM and prompt design.
+          - Query latency: Graph traversal is inherently slower than vector search or RDB queries. Designed a **Semantic Caching** strategy that pre-generates expected Q&A pairs from FAQs, documents, and the graph, storing them in a separate graph for instant cached responses.
+
+          **AIOps Platform & LLM Serving Optimization**
+
+          Deployed Kubernetes-based servers on EKS/ECR, served static frontend assets via CloudFront, and automated deployment with GitHub Actions. Introduced serving frameworks such as vLLM and TensorRT-LLM internally, and provided LLM serving and endpoints in a closed on-premises environment. Supported stable AI service operations by building an internal data analysis environment and company-wide LLM serving infrastructure.
+
+          Award: NIPA (National IT Industry Promotion Agency) Director's Award
+
+  - title: Education
+    layout: list
+    content:
+      - layout: left
+        title: Beijing Institute of Technology
+        sub_title: "B.S., Thesis — Design and Implementation of a Blockchain-based Multi-UAV Mission Management System"
+        caption: Feb 2023 - Jun 2023
+        description: | # this will include new lines to allow paragraphs
+          - Designed a closed, permissioned blockchain network on Hyperledger Fabric and built a Go-based REST server
+          - Built a Django-based UAV management system and a real-time monitoring dashboard
+
+  - title: Other Awards & Activities
+    layout: list
+    content:
+      - layout: left
+        title: "\"Jejuileum\": A Jeju-dialect Name Generator"
+        sub_title: 9oormthon (Guroomthon), Season 1
+        caption: Aug 2022
+        description: | # this will include new lines to allow paragraphs
+          Grand Prize (Kakao's top award) at the 1st Guroomthon; also won at the ICT Innovation Jeju competition and advanced to the national finals
+      - layout: left
+        title: "\"Baekgu\": A Companion Robot for Elderly Living Alone"
+        sub_title: Software Maestro
+        caption: Jun 2020 - Nov 2020
+        description: | # this will include new lines to allow paragraphs
+          Filed 2 patents, registered 3 software copyrights, competition award winner
+
+  - title: Skills
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      - **Backend**: Flask, Django, Go
+      - **AI/LLM**: PyTorch, vLLM, TensorRT-LLM, Knowledge Graph/Ontology design, RAG
+      - **Infra/DevOps**: AWS (EKS, ECR, CloudFront), Kubernetes, GitHub Actions
       - **Blockchain**: Hyperledger Fabric
 
 # Footer
