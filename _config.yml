@@ -89,7 +89,7 @@ content:
         title: Beijing Institute of Technology
         sub_title: Software Engineer - Bachelor of Engineering
         caption: 2016.09 - 2023.06
-        quote: >
+        quote: |-
           졸업논문
           < Design and Implementation of a Blockchain-based Multi-UAV Mission Management System >
         description: | # this will include new lines to allow paragraphs
@@ -142,7 +142,7 @@ content_en:
         title: Beijing Institute of Technology
         sub_title: Software Engineer - Bachelor of Engineering
         caption: Sep 2016 - Jun 2023
-        quote: >
+        quote: |-
           Thesis
           < Design and Implementation of a Blockchain-based Multi-UAV Mission Management System >
         description: | # this will include new lines to allow paragraphs
