@@ -116,10 +116,10 @@ content_en:
     content:
       - layout: left
         title: Mirae Asset Securities
-        sub_title: AI Engineer, Data Platform Team, AI Solutions Division
+        sub_title: AI Engineer, AI Solutions Division
         caption: Jul 2023 - Present
         quote: >
-          Designing and building financial-domain knowledge graphs and LLM serving infrastructure end to end, from planning to operations
+          Designing and operating financial-domain knowledge graphs and LLM serving infrastructure, end to end
         description: | # this will include new lines to allow paragraphs
           **Knowledge Graph DB with Ontology**
 
