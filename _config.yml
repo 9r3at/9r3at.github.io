@@ -47,15 +47,15 @@ about_content: | # this will include new lines to allow paragraphs
   단순히 모델을 서빙하는 것을 넘어, 데이터 파싱부터 온톨로지 설계·검증, 서빙 인프라까지 전 과정을 직접 설계하고 운영하며, 도메인 지식을 이해하고 실행할 수 있는 AI 서비스 파이프라인을 만드는 AI Engineer로 성장하고자 합니다.
 
 about_content_en: | # this will include new lines to allow paragraphs
-  Entered university at 16, having completed an accelerated equivalency program in place of middle and high school to pursue independent study at a faster pace, and was admitted to Beijing Institute of Technology to study Software Engineering.
+  Entered university at 16 after completing an accelerated equivalency program in place of middle and high school, allowing me to pursue independent study at a faster pace. I was admitted to Beijing Institute of Technology, where I studied Software Engineering.
 
-  Since then, continued to focus on solving problems through software — taking on nearly every kind of project, from IoT and blockchain to AI, as a developer across numerous competitions and hackathons. Built a broad range of experience in problem definition and resolution, further sharpened through Software Maestro, K-Digital Training (KDT), and backend internships.
+  Since then, I have focused on solving problems through software, working as a developer on projects spanning IoT, blockchain, and AI across numerous competitions and hackathons. I developed broad experience in problem framing and problem-solving, further strengthened through Software Maestro, K-Digital Training (KDT), and backend engineering internships.
 
-  Currently an AI Engineer at Mirae Asset Securities' AI Solutions Division, responsible for designing and operating financial-domain knowledge graphs and LLM serving infrastructure end to end. Designed and built an ingestion pipeline converting RDB records and unstructured financial documents — disclosures, prospectuses, research reports — into a unified knowledge graph. Developed a glyph/rule-line-coordinate-based table reconstruction method to improve PDF parsing accuracy, and implemented a self-reflective evaluation loop that validates LLM-generated ontologies against statutes and official classification systems, ensuring quality without manual review. Replaced an open-source temporal graph engine with a custom implementation supporting bi-temporal invalidation for detecting fact contradictions over time.
+  Currently, I work as an AI Engineer in the AI Solutions Division at Mirae Asset Securities, where I design and operate financial-domain knowledge graphs and LLM serving infrastructure end to end. I designed and built an ingestion pipeline that converts RDB records and unstructured financial documents — including disclosures, prospectuses, and research reports — into a unified knowledge graph. I developed a table reconstruction method based on glyph coordinates and rule-line geometry to improve PDF parsing accuracy, and implemented a self-evaluation loop that validates LLM-generated ontologies against statutes and official classification systems, minimizing the need for manual review. I also replaced an open-source temporal graph engine with a custom implementation supporting bi-temporal invalidation to detect contradictions between facts over time.
 
-  On the AIOps platform, designed a customer-facing LLM serving system balancing high availability — cross-region failover, link-failure tolerance, automatic GPU fault isolation — with serving performance, including prefix cache routing, prefill/decode separation, and KV management. Built an LLM Gateway on LiteLLM, Envoy, and AIBrix handling authentication, tenant quotas, model aliases, auditing, and data-region policy.
+  On the AIOps platform, I designed an LLM serving architecture that balances high availability — including cross-region failover, link-failure tolerance, and automatic GPU fault isolation — with inference performance through prefix-cache routing, prefill/decode disaggregation, and KV-cache management. I also built an LLM Gateway using LiteLLM, Envoy, and AIBrix to handle authentication, tenant quotas, model aliases, audit logging, and data-region policies.
 
-  Focused on owning the full pipeline, from data parsing through ontology design and validation to serving infrastructure, with the goal of building AI systems that understand and act on domain knowledge.
+  I focus on owning the full AI infrastructure pipeline — from document parsing, ontology design, and validation to inference and serving infrastructure — with the goal of building AI systems that can reliably understand and act on domain knowledge.
 
 content:
   - title: Experience # Title for the section
@@ -117,51 +117,52 @@ content_en:
       - layout: left
         title: Mirae Asset Securities
         sub_title: AI Engineer, AI Solutions Division
-        caption: Jul 2023 - Present
+        caption: Jul 2023 – Present
         quote: >
-          Designing and operating financial-domain knowledge graphs and LLM serving infrastructure, end to end
+          Designing and operating financial-domain knowledge graphs and LLM serving infrastructure end to end
         description: | # this will include new lines to allow paragraphs
-          **Knowledge Graph DB with Ontology**
+          **Ontology-Based Knowledge Graph**
 
-          Designed and built an ingestion pipeline that converts RDB records and unstructured financial documents (disclosures, prospectuses, research reports) into a unified knowledge graph. Developed a glyph-coordinate-based table reconstruction method to improve PDF table/figure parsing accuracy, and built a self-reflective evaluation loop that validates LLM-generated ontologies (TBox) against statutes and official classification systems, ensuring quality without manual review. Replaced an open-source temporal graph engine with a custom implementation to support bi-temporal invalidation for detecting fact contradictions over time.
+          Designed and built an ingestion pipeline that converts RDB records and unstructured financial documents — including disclosures, prospectuses, and research reports — into a unified knowledge graph. Developed a table reconstruction method based on glyph coordinates and rule-line geometry to improve PDF table and figure parsing accuracy, and built a self-evaluation loop that validates LLM-generated ontologies (TBox) against statutes and official classification systems. Replaced an open-source temporal graph engine with a custom implementation supporting bi-temporal invalidation to detect contradictions between facts over time.
 
-          - Built a 5-stage ingestion pipeline (parsing / ontology / ontology_axioms / materialization / indexing) that takes RDB records and unstructured documents (DART disclosures, simplified prospectuses, research, house views) as input and populates a knowledge graph (Neptune) and vector index (OpenSearch)
-          - Solved PDF table parsing accuracy issues with an algorithm that cross-validates OCR output against the original PDF's glyph and rule-line coordinates (band detection + DP alignment + VLM patch)
-          - Extracted statutes and official classification systems (Capital Markets Act, KRX, DART) via an LLM-independent ETL to serve as guardrails (closed classification, scope ceiling) for the ontology-design LLM, with SHACL validation and automatic classification of breaking changes across versions
-          - Introduced an LLM self-evaluation re-extraction loop that automatically improves ontology quality (re-generating with injected feedback below a quality threshold, escalating to human review above it)
+          - Built a five-stage ingestion pipeline — parsing, ontology generation, ontology axioms, materialization, and indexing — that processes RDB records and unstructured documents, including DART disclosures, simplified prospectuses, research reports, and house views, and populates both a knowledge graph in Amazon Neptune and a vector index in OpenSearch.
+          - Improved PDF table parsing accuracy by developing an algorithm that cross-validates OCR output against glyph coordinates and rule-line geometry extracted from the original PDF, using band detection, DP alignment, and VLM-based patching.
+          - Extracted statutes and official classification systems — including the Financial Investment Services and Capital Markets Act, KRX classifications, and DART taxonomies — through an LLM-independent ETL pipeline and used them as guardrails for ontology generation, including closed classifications and scope constraints. Added SHACL-based validation and automatic classification of breaking changes across ontology versions.
+          - Introduced an LLM self-evaluation and re-extraction loop that automatically improves ontology quality by regenerating results with injected feedback when quality falls below a defined threshold, with human review triggered only when automated recovery is insufficient.
 
           **AIOps Platform & LLM Serving Optimization**
 
-          - Operated a Kubernetes-based platform providing a data analysis environment linked to the CDP (Hadoop) analytics warehouse, along with LLM access
-          - Designed a customer-facing LLM serving platform balancing high availability (cross-region failover, link-failure tolerance, automatic GPU fault isolation) with LLM serving performance (prefix cache routing, prefill/decode separation, KV management), and built an LLM Gateway on LiteLLM/Envoy/AIBrix handling authentication, tenant quotas, model aliases, auditing, and data-region policy
+          - Operated a Kubernetes-based AI platform providing data analysis environments integrated with a CDP/Hadoop analytics warehouse, along with access to internally hosted LLMs.
+          - Designed a customer-facing LLM serving architecture that balances high availability — including cross-region failover, link-failure tolerance, and automatic GPU fault isolation — with inference performance through prefix-cache routing, prefill/decode disaggregation, and KV-cache management.
+          - Built an LLM Gateway using LiteLLM, Envoy, and AIBrix to manage authentication, tenant quotas, model aliases, audit logging, and data-region policies.
 
   - title: Education
     layout: list
     content:
       - layout: left
         title: Beijing Institute of Technology
-        sub_title: Software Engineer - Bachelor of Engineering
-        caption: Sep 2016 - Jun 2023
+        sub_title: Bachelor of Engineering in Software Engineering
+        caption: Sep 2016 – Jun 2023
         quote: |-
-          Thesis
-          < Design and Implementation of a Blockchain-based Multi-UAV Mission Management System >
+          Thesis:
+          Design and Implementation of a Blockchain-Based Multi-UAV Mission Management System
         description: | # this will include new lines to allow paragraphs
-          - Designed a closed, permissioned blockchain network on Hyperledger Fabric and built a Go-based REST server
-          - Built a Django-based UAV management system and a real-time monitoring dashboard
+          - Designed a closed, permissioned blockchain network using Hyperledger Fabric and built a Go-based REST API server.
+          - Built a Django-based UAV management system with a real-time monitoring dashboard.
 
   - title: Other Awards & Activities
     layout: text
     content: | # this will include new lines to allow paragraphs
       - **Open Data Forum Hackathon** · Ministry of the Interior and Safety (2022) — Minister's Award
       - **National AI Idea Competition** · ICT Innovation Square (2022) — NIPA Director's Award
-      - **9oormthon (Guroomthon)** · Kakao x Guroom (2022) — Grand Prize, Kakao CEO Award
-      - **OSAM Hackathon** · Ministry of National Defense x Ministry of Science and ICT SW Hackathon (2021) — Army Chief of Staff Award
+      - **9oormthon (Guroomthon)** · Kakao × Guroom (2022) — Grand Prize, Kakao CEO Award
+      - **OSAM Hackathon** · Ministry of National Defense × Ministry of Science and ICT SW Hackathon (2021) — Army Chief of Staff Award
 
   - title: Skills
     layout: text
     content: | # this will include new lines to allow paragraphs
-      - **AI**: LLM Inference, OCR Tech, Knowledge Graph, Ontology
-      - **Infra/DevOps**: AWS, Kubernetes, AirGap-OnPremise
+      - **AI / ML**: LLM Inference & Serving, OCR / Document AI, Knowledge Graphs, Ontology Engineering
+      - **Infrastructure / DevOps**: AWS, Kubernetes, Air-Gapped On-Premises Infrastructure
 
 # Footer
 footer_show_references: false
